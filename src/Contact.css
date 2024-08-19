@@ -1,0 +1,32 @@
+.contact-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .contact-details {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-details p {
+    margin: 10px 0;
+  }
+  
+  .contact-details a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
