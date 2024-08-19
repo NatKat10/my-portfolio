@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 50px;
+    height: 100vh;
+
+
+
+}
+
+.hero-content {
+    color: #fff;
+    max-width: 50%;
+
+}
+
+.hero-title {
+    font-size: 4em;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-indicator span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+.hero-content {
+    color: #fff;
+    max-width: 50%;
+}
+

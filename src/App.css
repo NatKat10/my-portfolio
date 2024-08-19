@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -12,6 +15,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 400; 
+}
+
 
 .App-header {
   background-color: #282c34;

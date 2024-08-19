@@ -1,0 +1,165 @@
+/* Container for the projects section */
+.projects-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  /* Title of the section */
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Grid layout for project cards */
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Individual project card styling */
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .view-details-button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .view-details-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Modal overlay background */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+  }
+  
+  /* Modal content styling */
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    z-index: 1100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  /* Modal title */
+  .modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Modal paragraph */
+  .modal p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+  }
+  
+  /* Styling for images in the modal */
+  .project-images img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Close button styling */
+  .close-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .close-button:hover {
+    background-color: #005bb5;
+  }
+  .play-game-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .play-game-button:hover {
+    background-color: #218838;
+  }
+
+
+  .lightbox-overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .lightbox-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+  }
+  
+  .lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }

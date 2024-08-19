@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bebas+Neue&display=swap');
+
+.skills-section {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .skill-category {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    color: #0073e6;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-category li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .skill-bar {
+    width: 70%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  .skill-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    position: relative;
+    overflow: hidden;
+    animation: loadSkill 2s ease-out;
+  }
+  
+  @keyframes loadSkill {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .javascript { width: 80%; }
+  .python { width: 95%; }
+  .java { width: 85%; }
+  .cplusplus { width: 75%; }
+  .c { width: 65%; }
+  .csharp { width: 80%; }
+  .bash { width: 75%; }
+  .r { width: 70%; }
+
+  .css { width: 85%; }
+  .nodejs { width: 80%; }
+  .vue { width: 90%; }
+  .jquery { width: 75%; }
+  .flask { width: 85%; }
+  .bootstrap{width: 90%;}
+
+
+  .git { width: 85%; }
+  .mongodb { width: 75%; }
+  .mysql { width: 90%; }
+  .colab { width: 98%; }
+
+  .problem-solving { width: 95%; }
+  .teamwork { width: 100%; }
+  .communication { width: 100%; }
+  .adaptability { width: 95%; }
+  .time-management { width: 85%; }
+  .attention{width: 95%;}
+  
+  @media (max-width: 768px) {
+    .skill-category {
+      width: 100%;
+    }
+  }
+  
