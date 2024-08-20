@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">My Portfolio</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,8 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#about">About Me</a>
+              <a className="nav-link 
+              " aria-current="page" href="#about">About Me</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#experience">Experience</a>
@@ -36,3 +37,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
