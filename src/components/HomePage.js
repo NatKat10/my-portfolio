@@ -11,9 +11,7 @@ function HomePage() {
         <a href="#about" className="cta-button">Learn More About Me</a>
       </div>
 
-      <div className="scroll-indicator">
-        <span></span>
-      </div>
+
     </section>
   );
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
 
 .App {
   text-align: center;
@@ -35,6 +35,9 @@ body{
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.section-title{
+  font-size: 40px;
+}
 
 .App-link {
   color: #61dafb;
@@ -53,7 +56,12 @@ body{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s ease-in-out;
 }
+
 .navbar {
   margin-bottom: 20px; /* Optional: Adds spacing between the navbar and the sections */
 }
@@ -63,8 +71,9 @@ body{
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Anek Devanagari', sans-serif;
-  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
 }
 
