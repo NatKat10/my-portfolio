@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import Modal from 'react-modal';
 import '../Projects.css'; // Make sure to create and style this CSS file
 
@@ -9,7 +9,6 @@ import food1 from '../assets/food1.png';
 import food2 from '../assets/food2.png';
 import space1 from '../assets/space1.png';
 import space2 from '../assets/space2.png';
-import project1 from '../assets/project1.png';
 import first1 from '../assets/first1.png';
 import first2 from '../assets/first2.png';
 
@@ -20,6 +19,8 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
 
   const projects = [
     {
@@ -47,7 +48,7 @@ function Projects() {
     {
       title: 'Retrieve-Project',
       description: 'An Information Retrieval Project built with Python.',
-      images: [project1],
+      images: [],
       details: `Developed a search engine for English Wikipedia capable of processing queries across 6M documents using Python, 
                 Google Colab, Google Cloud Platform, Ngrok, Flask App, and Pyspark. Enhanced the engine by implementing new inverted index classes, 
                 optimizing Cosine Similarity calculations, and improving search speed and accuracy.`,
@@ -60,6 +61,13 @@ function Projects() {
                 and she was very excited to see it. This project was my introduction to web development and helped me grasp the basics of building web pages.`,
     },
   ];
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile(); // Check on component mount
+    window.addEventListener('resize', checkMobile); // Check on window resize
+    return () => window.removeEventListener('resize', checkMobile); // Clean up
+  }, []);
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -105,7 +113,13 @@ function Projects() {
             padding: '20px',
             position: 'relative',
             borderRadius: '10px',
-            zIndex: '1100'
+            zIndex: '1100',
+            width: '90%',  // Added this to make the modal responsive
+            maxHeight: '90%',  // Adjust the height for mobile
+            overflowY: 'auto',  // Allow scrolling if content is too long
+            top:'20%',
+            left: isMobile ? '1%' : '0%', // Add left percentage for mobile
+
           },
           overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
@@ -117,14 +131,14 @@ function Projects() {
           <div style={{ color: '#000' }}>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.details}</p>
-            <div className="project-images" style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+            <div className="project-images" style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
               {selectedProject.images.map((image, index) => (
                 <img 
                   key={index} 
                   src={image} 
                   alt={`${selectedProject.title} screenshot ${index + 1}`} 
                   style={{ 
-                    width: '48%', 
+                    width: '60%', 
                     height: 'auto', 
                     maxHeight: '300px', 
                     objectFit: 'cover',
@@ -216,7 +230,7 @@ function Projects() {
               src={lightboxImage} 
               alt="Enlarged view" 
               style={{ 
-                maxWidth: '80%', 
+                maxWidth: '90%', 
                 maxHeight: '80%', 
                 borderRadius: '10px' 
               }}
