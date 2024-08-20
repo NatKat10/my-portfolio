@@ -48,3 +48,53 @@ body{
     transform: rotate(360deg);
   }
 }
+.custom-navbar {
+  background: linear-gradient(135deg, #e0e2e4, #a4d8e6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+.navbar {
+  margin-bottom: 20px; /* Optional: Adds spacing between the navbar and the sections */
+}
+.navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  margin-right: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0073e6;
+  background-color: #fff;
+}
+.navbar-nav .nav-link.active {
+  color: #0073e6; /* Change this color to differentiate the active link */
+  background-color: #f0f0f0; /* Set a subtle background for the active link */
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
