@@ -105,7 +105,10 @@ function Projects() {
             padding: '20px',
             position: 'relative',
             borderRadius: '10px',
-            zIndex: '1100'
+            zIndex: '1100',
+            width: '90%',  // Added this to make the modal responsive
+            maxHeight: '90%',  // Adjust the height for mobile
+            overflowY: 'auto',  // Allow scrolling if content is too long
           },
           overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.75)',
@@ -117,7 +120,7 @@ function Projects() {
           <div style={{ color: '#000' }}>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.details}</p>
-            <div className="project-images" style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+            <div className="project-images" style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap' }}>
               {selectedProject.images.map((image, index) => (
                 <img 
                   key={index} 
@@ -216,7 +219,7 @@ function Projects() {
               src={lightboxImage} 
               alt="Enlarged view" 
               style={{ 
-                maxWidth: '80%', 
+                maxWidth: '90%', 
                 maxHeight: '80%', 
                 borderRadius: '10px' 
               }}
