@@ -98,3 +98,20 @@ body{
 .navbar-toggler {
   border: none;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+    padding: 8px 20px;
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
