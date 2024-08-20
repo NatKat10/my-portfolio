@@ -117,7 +117,7 @@ function Projects() {
             width: '90%',  // Added this to make the modal responsive
             maxHeight: '90%',  // Adjust the height for mobile
             overflowY: 'auto',  // Allow scrolling if content is too long
-            top:'20%',
+            top:'10%',
             left: isMobile ? '1%' : '0%', // Add left percentage for mobile
 
           },
