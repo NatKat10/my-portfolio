@@ -30,6 +30,7 @@ function Projects() {
       details: `As part of our final project at Ben Gurion University of the Negev's Department of Software and Information Systems Engineering, 
                 we developed Evo-Genes, a comprehensive gene visualization system. Evo-Genes provides a web-based platform integrating server-side 
                 and client-side programming with the Ensembl database. It offers visually engaging comparative gene sequence analysis with a focus on exon display.`,
+      link: 'https://evogene.cs.bgu.ac.il/'
     },
     {
       title: 'Foodie Recipes Project',
@@ -59,6 +60,7 @@ function Projects() {
       images: [first1, first2],
       details: `This is my first website ever, created using pure HTML and CSS. The site is dedicated to my grandmother who lives in Russia, 
                 and she was very excited to see it. This project was my introduction to web development and helped me grasp the basics of building web pages.`,
+      link:  'https://web-development-environments-2023.github.io/323225409'
     },
   ];
 
@@ -117,7 +119,7 @@ function Projects() {
             width: '90%',  // Added this to make the modal responsive
             maxHeight: '90%',  // Adjust the height for mobile
             overflowY: 'auto',  // Allow scrolling if content is too long
-            top:'20%',
+            top:'8%',
             left: isMobile ? '1%' : '0%', // Add left percentage for mobile
 
           },
@@ -156,28 +158,33 @@ function Projects() {
                 style={{ 
                   display: 'block', 
                   margin: '20px auto', 
-                  padding: '10px 20px', 
+                  padding: '0px 10px', 
                   backgroundColor: '#00CED1', 
                   color: '#fff', 
-                  width:'80px',
                   borderRadius: '10px', 
                   textAlign: 'center', 
-                  textDecoration: 'none' 
+                  textDecoration: 'none',
+                  width:'170px',
+                  height:'30px'
                 }}
               >
-                Play Game
+                Go to Website
               </a>
             )}
             <button 
               onClick={closeModal} 
               style={{ 
                 display: 'block', 
-                margin: '20px auto', 
-                padding: '10px 20px', 
+                margin: '5px auto', 
+                padding: '0px 10px', 
                 backgroundColor: '#0073e6', 
                 color: '#fff', 
-                borderRadius: '5px', 
-                cursor: 'pointer' 
+                borderRadius: '10px', 
+                textAlign: 'center', 
+                textDecoration: 'none',
+                cursor: 'pointer', 
+                width:'170px',
+                height:'30px'
               }}
             >
               Close
