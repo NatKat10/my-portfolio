@@ -21,7 +21,7 @@ function Skills() {
     {
       category: 'Frameworks & Libraries',
       skills: [
-        { name: 'React', icon: <FaReact /> },
+        // { name: 'React', icon: <FaReact /> },
         { name: 'Vue.js', icon: <FaVuejs /> },
         { name: 'Node.js', icon: <FaNodeJs /> },
         { name: 'Flask', icon: <SiFlask /> },
